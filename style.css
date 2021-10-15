@@ -1,0 +1,142 @@
+/* Your styling here */
+html{
+    
+    background-color: #FFC0C1;
+
+}
+body{
+    background-color: white;
+    max-width: 710px;
+    max-height: 300px;
+    text-align: center;
+    margin: 20px auto;
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0, 0.2);
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    animation-name: fade-in-top;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+@keyframes fade-in-top {
+    0%{
+      -webkit-transform: translateY(-50px);
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100%{
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+h1{
+    font-family: serif;
+    font-size: 60px;
+    animation: myAnim 1s ease 500ms 1 normal both;
+    text-align: center;
+    margin: 20px auto;
+}
+@keyframes myAnim {
+    0% {
+      opacity: 0;
+      transform: translateY(-250px);
+    }
+}    
+
+
+
+p{
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: middle;
+    font-weight: 700;
+    margin: 5px auto;
+    animation: myAnim2 1s ease 800ms 1 normal both;
+}
+@keyframes myAnim2 {
+    0% {
+      opacity: 0;
+      transform: translateY(-250px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.completed{
+text-decoration: line-through;
+color: grey;
+font-size: x-large;
+
+
+
+}
+
+.trashcan {
+    font-size: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#inputfield{
+    width: 300px;
+    height: 46px;
+    border: 1px solid black;
+    outline: none;
+    font-size: 25px;
+    vertical-align: middle ;
+    animation: myAnim3 1s ease 950ms 1 normal both;
+
+}
+
+#addToDo{
+    
+    height: 35px;
+    width: 50px;
+    vertical-align: middle;
+    font-size: 15px;
+    animation: myAnim3 1s ease 950ms 1 normal both;
+
+}
+@keyframes myAnim3 {
+    0% {
+      opacity: 0;
+      transform: translateY(-250px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+#todo-list{
+    list-style: none;
+}
+li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    animation: myAnim4 1s ease 0ms 1 normal both;
+}
+@keyframes myAnim4 {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+li:hover{
+    
+    text-decoration: line-through;
+}
+
